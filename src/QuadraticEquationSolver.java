@@ -8,7 +8,7 @@ public class QuadraticEquationSolver {
     }
 
     public void getResult() {
-        double discriminant = (b * b) - (4 * a * c);
+        int discriminant = (b * b) - (4 * a * c);
         if (discriminant < 0) {
             System.out.println("No roots or Complex roots");
         } else if (discriminant > 0) {
