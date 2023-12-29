@@ -7,6 +7,7 @@ public class QuadraticSolver {
         c = coefficientC;
 
         int discriminant = (b * b) - (4 * a * c);
+        
         if (discriminant < 0) { //the roots are not real
             System.out.println("Complex roots");
         } else if (discriminant > 0) {// the roots are two distinct values
@@ -16,6 +17,6 @@ public class QuadraticSolver {
         } else { //one real root
             System.out.println("x = " + ((-b) / (2.0 * a)));
         }
-    }
+    }//end method solve
 
-}
+}//end class
