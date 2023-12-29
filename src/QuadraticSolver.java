@@ -1,13 +1,11 @@
-public class QuadraticEquationSolver {
+public class QuadraticSolver {
     private int a, b, c;
 
-    public void setVariables(int coefficientA, int coefficientB, int coefficientC){
+    public void solve(int coefficientA, int coefficientB, int coefficientC) {
         a = coefficientA;
         b = coefficientB;
         c = coefficientC;
-    }
 
-    public void getResult() {
         int discriminant = (b * b) - (4 * a * c);
         if (discriminant < 0) { //the roots are not real
             System.out.println("Complex roots");
